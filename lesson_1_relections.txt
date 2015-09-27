@@ -1,0 +1,51 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    By comparision
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Being able to restore to a older working version
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    The commit Made May not be Logical and frequent updates will result in large number of versions
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Because Git assumes all files are inter related in a repository and that they cannot function independently
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log gives the summary of commits made with commit ID, author and date and when gif diff is used with commit id we can find what changes were made.
+
+    However when we use git log --stat we can find the number of lines added and deleted also
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    It's fairly easy to track changes made and correct them
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Source Code Check IN
+
+
+    A Repository is a collection of files tracked by git as a cohesive unit
+
+    Head is what Git calls the commit you are currently on
+
+    git checkout updates the files in the working tree to match the version in the index or specified tree
+
+    to revert back to the most recent commit we have to use git reflog, which shows us all the commits that were checked out recently and we have to use the  most recent commit to say git checkout recentCommitId
+
+    git log displays the commits made in the reverse chronological order from the most recent one at the top to the first commit at the bottom
+
+    git diff originalCommit NewerCommit
+
+    InOrder to display the additions in the Newer Commit and deletions from the previous commits
+    Reversing the order would display additions as deletions
