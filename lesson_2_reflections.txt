@@ -5,3 +5,36 @@ A .git meta file is created which keeps track of files and commits
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area is where you move a set of files to be added from the working directory, so that they can all be commited at once
+
+The Snapshot of Staging area and the repository are exactly the same before making adding the files to the staging area, to find the modifications between working directory and staging area "git diff" would show us the changes we made, when we say git add then there would be difference between repo and staging area and to find those differences we should use git diff --staged
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+By grouping the files that indicate a Logical commit and commiting it to git
+
+Git allows you to label commits and these labels are called Branches
+
+Whenever git warns of "Detached Head State" it means we are performing a commit without a branch label
+
+Whenevr we say "git checkout branch-name", it has the same code as the master
+git branch will show you the branches that are available
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches help in keeping a main version and a experimental version apart
+
+You will be able to visualize the branching using the command 
+git log --graph --oneline branch1 branch2
+
+How do the diagrams help you visualize the branch structure?
+By helping us trace the parent
+
+"git branch -d branchName" will allow us to delete a branch
+
+for a merged commit it would be hard to compare it with its parent hence git provides us a command called "git show commitID" which is like git diff between the commit and parent
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Merging results in adding the work done in the feature area to the main branch 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Always merging helps us have better control of code while merging,
