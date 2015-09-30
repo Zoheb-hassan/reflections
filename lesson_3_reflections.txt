@@ -7,3 +7,8 @@ To avoid conflicts that would come in from changes made by contributors
 Whenevr we clone a repository git auutomatically adds a remote to it which can be checked via command git remote -v
 The command for adding a remote is "git remote add origin url" and this adds the remote to which we can push/pull
 For Pushing "git push origin master" will push the master branch to the remote on git
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+Fork is when you have a copy and wish the develop your own version of the project
+Clone is When you wish to push/pull changes between the online and the local Repository
+Branches is where you are working on a certain feature which you wish to merge with the Main Branch after you're done working on the Feature
