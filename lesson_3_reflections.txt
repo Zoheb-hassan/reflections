@@ -3,3 +3,7 @@ When Collaborating with contributors remotely and also saving the work on cloud
 
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 To avoid conflicts that would come in from changes made by contributors
+
+Whenevr we clone a repository git auutomatically adds a remote to it which can be checked via command git remote -v
+The command for adding a remote is "git remote add origin url" and this adds the remote to which we can push/pull
+For Pushing "git push origin master" will push the master branch to the remote on git
