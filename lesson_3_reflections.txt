@@ -12,3 +12,19 @@ Describe the differences between forks, clones, and branches. When would you use
 Fork is when you have a copy and wish the develop your own version of the project
 Clone is When you wish to push/pull changes between the online and the local Repository
 Branches is where you are working on a certain feature which you wish to merge with the Main Branch after you're done working on the Feature
+
+Git also stores a local copy of the remote on the local repository and in instances where a change is made on both local and remote a 'git fetch' would update the copy of local remote repository leaving the master branch unaffected.
+
+Using git fetch and git diff we can easliy find out the updates made.
+
+Post fetch we can merge the origin/master branch into the master branch and these statements happen when we say 'git pull'
+git pull = git fetch + 'git merge master origin/master'
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+To fetch and compare changes before merging the changes and updating master branch
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+Google Dcos etc but that would be harder to perform
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+This approacch lets us have the changes reviewed before we can start merging it to the master
